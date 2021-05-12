@@ -17,10 +17,10 @@
 ---
 
 ### Execute Command:
-- to get all matches from the European Championship
-    - `bin/console football:matches`
-- to get only live matches from the European Championship
-    - `bin/console football:matches --live`
+- to get all ratings from the European Championship
+    - `bin/console football:ratings`
+- to get only live ratings from the European Championship
+    - `bin/console football:ratings --live`
     
 ---
 ###RabbitMq
@@ -32,5 +32,5 @@
     - http://localhost:15672
 - Messenges are published to rabbitMq as Json:
 ```json
-{"event":"match.api","data":{"matchId":"2021-06-11:1900:TR-IT","team1":"TR","team2":"IT","matchDatetime":"2021-06-11 19:00"}}"
+{"event":"rating.api","data":{"matchId":"TR-IT","team1":"TR","team2":"IT","homeTeamOdd":"1.2","awayTeamOdd":"3.4","drawOdd":"6.5"}}
 ```
