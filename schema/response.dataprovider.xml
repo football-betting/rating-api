@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<DataProviders
+        xmlns="xervice:dataprovider-01"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="xervice:dataprovider-01 ../vendor/xervice/data-provider/dataprovider.schema.xsd"
+>
+    <DataProvider name="ResponseMatches">
+        <DataElement name="matches" type="ResponseMatch[]" singleton="ResponseMatch"/>
+    </DataProvider>
+
+    <DataProvider name="ResponseMatch">
+        <DataElement name="homeTeamOdd" type="string"/>
+        <DataElement name="draw" type="string"/>
+        <DataElement name="awayTeamOdd" type="string"/>
+        <DataElement name="homeTeam" type="string"/>
+        <DataElement name="awayTeam" type="string"/>
+    </DataProvider>
+
+</DataProviders>

@@ -1,0 +1,8 @@
+framework:
+    messenger:
+        serializer:
+            default_serializer: App\Messenger\MessengerSerializer
+        transports:
+            rating.api.to.match: '%env(Rating)%'
+        routing:
+            'stdClass': rating.api.to.match

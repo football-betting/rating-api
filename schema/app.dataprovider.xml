@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<DataProviders
+        xmlns="xervice:dataprovider-01"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="xervice:dataprovider-01 ../vendor/xervice/data-provider/dataprovider.schema.xsd"
+>
+    <DataProvider name="Match">
+        <DataElement name="event" type="string"/>
+        <DataElement name="data" type="Data"/>
+    </DataProvider>
+
+    <DataProvider name="Data">
+        <DataElement name="matchId" type="string"/>
+        <DataElement name="team1" type="string"/>
+        <DataElement name="team2" type="string"/>
+        <DataElement name="homeTeamOdd" type="string"/>
+        <DataElement name="awayTeamOdd" type="string"/>
+        <DataElement name="drawOdd" type="string"/>
+    </DataProvider>
+
+</DataProviders>
